@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher.UpdateClass">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Update Course"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <Spinner
+            android:id="@+id/update_subject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update Course"
+            android:inputType="textCapWords"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <Spinner
+            android:id="@+id/update_state"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update State"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <Spinner
+            android:id="@+id/update_district"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update District"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <TextView
+            android:id="@+id/update_date_started"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update Date Started"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <TextView
+            android:id="@+id/update_date_end"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update Date End"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <EditText
+            android:id="@+id/update_language"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update Language"
+            android:paddingLeft="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <EditText
+            android:id="@+id/update_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update Address"
+            android:paddingLeft="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <EditText
+            android:id="@+id/update_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Update Whatsapp Link"
+            android:paddingLeft="15dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_border"/>
+
+
+        <Button
+            android:id="@+id/update_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
