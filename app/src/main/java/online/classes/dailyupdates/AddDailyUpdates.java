@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import java.util.Objects;
+
 import online.classes.R;
 
 public class AddDailyUpdates extends AppCompatActivity {
@@ -17,7 +19,7 @@ public class AddDailyUpdates extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_daily_updates);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         videos=findViewById(R.id.videos);
         photos=findViewById(R.id.photos);
